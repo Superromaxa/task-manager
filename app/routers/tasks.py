@@ -3,9 +3,9 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
-from ..database import get_db
-from ..schemas import TaskCreate, TaskUpdate, TaskResponse
-from .. import services
+from app.database import get_db
+from app.schemas import TaskCreate, TaskUpdate, TaskResponse
+from app import services
 
 router = APIRouter(prefix="/tasks", tags=["tasks"])
 
