@@ -29,6 +29,7 @@ Provides a RESTful API with support for CRUD operations, filtering, sorting, and
 
 ## Project Structure
 
+```
 task_manager/
 ├── app/
 │   ├── main.py
@@ -40,6 +41,7 @@ task_manager/
 │       └── tasks.py
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
@@ -47,25 +49,33 @@ task_manager/
 
 1. Clone the repository
 
-git clone https://github.com/your-username/task-manager-api.git
-cd task-manager-api
+```
+git clone https://github.com/your-username/task-manager.git
+cd task-manager
+```
 
 2. Create virtual environment
 
+```
 python -m venv venv
 source venv/bin/activate  # macOS / Linux
 # or
 venv\Scripts\activate     # Windows
+```
 
 3. Install dependencies
 
+```
 pip install -r requirements.txt
+```
 
 ---
 
 ## Running the Application
 
+```
 uvicorn app.main:app --reload
+```
 
 API will be available at:
 
@@ -87,12 +97,14 @@ GET /tasks/top/{n}    - Get top-N priority tasks
 
 ## Example Request
 
+```
 {
   "title": "Finish project",
   "description": "Complete FastAPI backend",
   "status": "in_progress",
   "priority": 8
 }
+```
 
 ---
 
